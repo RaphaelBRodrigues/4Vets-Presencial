@@ -1,0 +1,441 @@
+body{
+    /*background-color: rgba(42,63,128,0.1);*/
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+
+}
+button{
+    transition-duration: 1s;
+    border:0px solid rgba(0,0,0,0);
+    background-image:linear-gradient(to right,#2A6296,#37768C);
+    border-radius: 3px;
+}
+button:hover{
+    background-image:linear-gradient(to right,#37768C,#2A6296);
+
+    box-shadow:0px 0px 35px black;
+
+	background-position:  center;
+
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+.word{
+    font-family: calibri;
+    font-weight: 550;
+    font-size:1.1em;
+}
+#menu-button{
+    display:none;
+    background-image:initial;
+}
+.cab{
+    z-index: 999;
+    height: 6em;
+        background-color: #2A3F80;
+}
+#menu{
+  
+}
+ul{
+    top: 1.5em;
+    position: relative;
+    display: inline;
+    list-style: none;
+}
+li{
+    display:inline;
+
+}
+.menu-item{
+    top:-1em;
+    position: relative;
+}
+#menu-catalogo{
+left: 15em;
+}
+#menu-sobre{
+    left: 17em;
+    }
+#menu-parceiro{
+    left: 19em;
+    }
+    #menu-contato{
+        left: 21em;
+        }
+    
+
+#logo{
+    margin-left: 1.5em;
+}
+#logo-img{
+    height: 3em;
+}
+#menu-carrinho{
+    font-size:2em;
+
+    top:-0.2em;
+    left: 37em;
+}
+#menu-login{
+    font-size:2em;
+
+    top:-0.2em;
+    left:38em;
+}
+#main{
+    background-repeat: no-repeat;
+    background-position:top left;
+    background-color: gray;
+    position: relative;
+    height: 38em;
+    top: -2.7em;
+    background-image: url('https://www.consultoriarr.com.br/wp-content/uploads/2019/05/img-contabilidade-para-pet-shop.jpg');
+}
+#filtro{
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    border-bottom: 2px solid #2C2A96;
+}
+#main-titulo{
+    letter-spacing: 0.1em;
+    word-spacing: 0.1em;
+    position: relative;
+    top: 1.5em;
+    text-shadow: 0px 0px 10px black;
+    font-size: 4em;
+    color:white;
+    z-index: 55;
+}
+#main-texto{
+    width: 70%;
+    position: relative;
+    text-shadow: 0px 0px 10px black;
+
+    word-wrap: break-word;
+    top: 4.5em;
+    font-size: 1.5em;
+    color:white;
+    font-weight: 100;
+    z-index: 55;
+}
+#main-button{
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    position: relative;
+    top: 5em;
+    font-size: 2em;
+    background-color:yellow;
+    color:white;
+    z-index: 55;
+}
+footer{
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0.5em 0 0.5em 0;
+    background-color: #2A3F80;
+    color:white;
+    border-top: 2px solid #2C2A96;
+    position: relative;
+
+}
+#produtos{
+    
+    display: table;
+}
+.bloco-produto{
+    display: table-cell;
+    position: relative;
+    padding: 1em 0.5em 1em 0.5em; 
+   
+ 
+}
+#bloco-1{
+    right: 8em;
+}
+#bloco-2{
+    right: 0em;
+
+}
+#bloco-3{
+    right: -8em;
+
+}
+#titulo-sessao-produtos{
+    padding-top: 1em;
+    color:rgba(42,63,128,1);
+    font-family: Montserrat;
+    text-shadow:0px 0px 4px black;
+   
+    width: 100%;
+    font-size: 3.8em;
+}
+.imagem-produto{
+    height: 16em;
+    width: 24em;
+}
+.titulo-produto{
+    margin-bottom:2em;
+    color:rgba(42,63,128,0.8);
+
+    font-family: Montserrat;
+    text-shadow:0px 0px 1px black;
+    font-size: 2.8em;
+}
+#produto-button{
+    margin-top:2em;
+    margin-bottom:2em;
+    border:0;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    font-size: 2em;
+    color:white;
+    background-image:linear-gradient(to right,rgba(42,63,128,0.5),rgba(42,63,128,0.5),rgba(42,63,128,0.1));
+}
+
+#titulo-sessao-sobre{
+    padding-top: 1em;
+    text-align: center;
+    color:white;
+    font-family: Montserrat;
+    text-shadow:0px 0px 20px black;
+
+    width: 100%;
+    font-size: 3.8em;
+}
+
+#sessao-sobre{
+    background-color: rgb( 50, 74, 94);
+    top:-9.5em;
+    position: relative;
+    height: 52em;
+
+}
+
+#sessao-produtos{
+    position: relative;
+    top:-6em;
+}
+
+
+#sobre-linha{
+    position: relative;
+    top: 5em;
+}
+#sobre-texto{
+    border-radius: 5px;
+    width: 40%;
+    float: right;
+    text-align: right;
+    position: relative;
+    right: 5%;
+    color:white;
+
+}
+
+#sobre-imagem{
+    float: left;
+    width: 35%;
+    position: relative;
+    left:5%;
+    top:-8em;
+
+
+}
+
+
+#titulo-sessao-parceiros{
+    padding-top: 1em;
+    text-align: center;
+
+    width: 100%;
+    font-size: 3.8em;
+    color:rgba(42,63,128,1);
+    font-family: Montserrat;
+    text-shadow:0px 0px 4px black;
+}
+
+#sessao-parceiros{
+    background-color: white;
+    top:-9em;
+    position: relative;
+
+}
+
+
+#copy{
+    text-align: center;
+}
+.logo-parceiros{
+    margin-right: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1088px) {
+ 
+    .word{
+    
+        opacity: 0;
+        display: none;
+    }
+
+#main{
+    background-position:top left;
+    height: 26em;
+    background-size:120%;
+    background-image: url('https://observatoriodeourofino.com.br/wordpress/wp-content/uploads/2017/03/17988419.jpg');
+}
+    #main-titulo{
+        position: relative;
+        top: 0.4em;
+        text-shadow: 0px 0px 10px black;
+        font-size: 3.8em;
+        color:white;
+        font-size: 3em;
+
+        z-index: 55;
+    }
+    #main-texto{
+        width: 80%;
+    
+        word-wrap: break-word;
+        top: 1.2em;
+        font-size: 1.1em;
+    }
+    .bloco-produto{
+        display: block;
+        left:0;
+        right: 0;
+    }
+    #sessao-produtos{
+        display: block;
+    }
+    #main-button{
+      display: none;
+        
+    }
+    .titulo-button{
+        font-size: 13.5em;
+                
+              }
+    #produto-button{
+margin-top: 1.5em;
+        
+      }
+
+
+
+#sobre-linha{
+    position: relative;
+    top: 5em;
+}
+#sobre-texto{
+    top:-8em;
+    width: 90%;
+    float: initial;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+        color:white;
+    text-align: center;
+    right: 0%;
+    left:0%;
+}
+
+#sobre-imagem{
+    
+
+    float: initial;
+    width: 50%;
+    position: relative;
+   display:block;
+   margin-right: auto;
+   margin-left: auto;
+   right: 0%;
+left:0%;
+
+
+}
+#sessao-sobre{
+    height: 54em;
+}
+
+#sobreParte2{
+    display: none;
+}
+
+#copy{
+    text-align: center;
+}
+#parceiros-linha{
+
+display: block;
+}
+.logo-parceiros{
+    margin-right: 0em;
+}
+#menu-button{
+    position: relative;
+    top:-0.7em;
+    display:inherit;
+    left: 11em;
+    background-image:initial;
+}
+.retratil{
+    top:1em;
+    z-index: 999;
+    font-weight: bold;
+
+}
+#menu-catalogo{
+    left: -10em;
+    top:3em;
+}
+#menu-sobre{
+    top:5em;
+    left: -14.7em;
+}
+#menu-parceiro{
+    top:7em;
+
+    left: -19.9em;
+}
+#menu-contato{
+    top:9em;
+
+    left: -24.8em;
+}  
+
+#menu-carrinho{
+    display:none;
+
+    position: relative;
+}
+
+#menu-login{
+    display:none;
+
+}
+.menuAberto{
+    z-index: 999;
+    height: 22em;
+        background-color: #2A3F80;
+}
+.menuAbertoLinks{
+display: inherit;
+opacity: 1;
+}
+
+
+}
