@@ -1,6 +1,9 @@
 create database Catchuro;
 use Catchuro;
 
+CREATE USER '4vets'@'localhost' IDENTIFIED BY '4vets';
+GRANT ALL PRIVILEGES ON *.* TO '4vets'@'localhost';
+
 create table Representante(
 RepresentanteID int auto_increment,
 Nome varchar(30) unique not null,
@@ -30,4 +33,3 @@ RepresentanteID int(5) not null,
 primary key(ClienteID),
 foreign key(RepresentanteID) references Representante(RepresentanteID)
 );
-select * from host;

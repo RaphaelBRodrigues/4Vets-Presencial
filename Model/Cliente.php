@@ -5,7 +5,7 @@ class Representante{
 private $pdo;
 
 public function __construct(){
-  $pdo = new PDO("mysql:host=127.0.0.1;dbname=Catchuro","root","root");
+  $this->pdo = new PDO('mysql:host=localhost;dbname=Catchuro','4vets','4vets');
 }
 public function cadastroCliente(){
 echo "ola";
