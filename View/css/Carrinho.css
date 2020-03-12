@@ -1,0 +1,19 @@
+@media screen and (max-width:1088px) {
+    .linha-produt{
+        display: block;
+        padding-left: 0em;
+        margin-left: auto;
+        margin-right: auto;
+
+        }
+        #menu-carrinho{
+            left:-13em;
+            top:6.2em;
+        }
+        #menu-login{
+            left:2.5em;
+
+        }
+     
+       
+}

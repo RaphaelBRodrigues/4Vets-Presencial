@@ -5,8 +5,8 @@
     <title></title>
   </head>
   <body>
-    <button type="button" name="button"><a href="CadastroRepresentanteDeVendas.php">Representante</a></button>
-    <button type="button" name="button"><a href="CadastroCliente.php">Cliente</a></button>
-
+  <button type="button" name="button"><a href="cadastroCliente.php">Cliente</a></button>
+  <button type="button" name="button"><a href="cadastroRepresentante.php">Representante</a></button>
+  <?php echo "oi";?>
   </body>
 </html>

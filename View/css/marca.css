@@ -1,0 +1,47 @@
+.marca-produto{
+    font-size:2em;
+    color:rgba(42,63,128,1);
+
+}
+.titulo-produto{
+    margin-bottom:0.5em;
+}
+.valor-produto{
+    color:rgba(42,63,128,1);
+
+}
+.linha-produt
+{
+   
+    padding-left: 7em;
+}
+.linha-produt *{
+text-align: center;
+
+}
+.adicionarCarrinho{
+    color:white;
+    font-size:1.4em;
+    padding: 0.5em 1em 0.5em 1em;
+    width: 100%;
+}
+
+@media screen and (max-width:1088px) {
+    .linha-produt{
+        display: block;
+        padding-left: 0em;
+        margin-left: auto;
+        margin-right: auto;
+
+        }
+        #menu-carrinho{
+            left:4em;
+            top:5em;
+        }
+        #menu-login{
+            left:1.3em;
+
+        }
+     
+       
+}

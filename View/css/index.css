@@ -37,8 +37,10 @@ nav ul li a{
     height: 6em;
         background-color: #2A3F80;
 }
-#menu{
-  
+.menu{
+    z-index: 999;
+    height: 6em;
+        background-color: #2A3F80;
 }
 ul{
     top: 1.5em;
@@ -275,7 +277,42 @@ footer{
 
 
 
+@media screen and (max-width:1451px) and (min-width:1090px)  {
+   #sessao-sobre{
+       height: 60em;
+   }
+   
+   .titulo-produto{
+       font-size:2em;
+   }
+    #menu-carrinho{
+    left: 17em;
+    }
+    
+    #menu-login{
+        left: 20em;
 
+    }
+    #bloco-1{
+        width:10%;
+        right: 0em;
+    }
+    #bloco-2{
+        right: 0em;
+        width:10%;
+
+    }
+    #bloco-3{
+        width:10%;
+        right: -0em;
+    
+    }
+    .bloco-produto{
+        padding: 0 0 0 0;
+    }
+    }
+    
+    
 
 
 
@@ -418,14 +455,19 @@ display: block;
 }  
 
 #menu-carrinho{
-    display:none;
-
+    top: 5em;
+    left: 2.5em;
     position: relative;
+
 }
 
 #menu-login{
+    left: 3em;
+    top: 5em;
+}
+.icon-tchau{
     display:none;
-
+    opacity: 0;
 }
 .menuAberto{
     z-index: 999;
