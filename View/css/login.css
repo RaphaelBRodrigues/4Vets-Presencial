@@ -1,0 +1,50 @@
+fieldset{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 40%;
+    border:3px solid rgba(42,63,128,1);
+
+}
+legend{
+    font-size: 4em;
+    color:rgba(42,63,128,1);
+
+}
+#button-login{
+    color:white;
+    font-size: 2em;
+}
+.material-icons label{
+    font-size: 1.6em;
+}
+fieldset input{
+    font-size: 1.5em;
+}
+.div-button{
+    margin-top: 4em;
+    
+    position: relative;
+    color:white;
+    font-size: 2em;
+    width: 20%;
+    height: 2em;
+
+}
+a{
+
+    text-decoration:none;
+    color:white;
+}
+#rep{
+    margin-bottom: 4em;
+}
+#cadastro{
+    color:blue;
+    text-decoration: underline;
+}
+@media screen and (max-width:1088px) {
+    .div-button{
+    width: 80%;
+    }
+}

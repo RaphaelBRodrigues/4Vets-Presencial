@@ -451,18 +451,21 @@ display: block;
 #menu-contato{
     top:9em;
 
-    left: -24.8em;
+    left: -28.8em;
 }  
 
 #menu-carrinho{
     top: 5em;
-    left: 2.5em;
+    left: -1.5em;
     position: relative;
+    background-color: yellow;
 
 }
 
 #menu-login{
-    left: 3em;
+    left:34em;
+    background-color: yellow;
+
     top: 5em;
 }
 .icon-tchau{

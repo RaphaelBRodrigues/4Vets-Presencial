@@ -20,6 +20,7 @@ if($_SESSION['logado'] == !true){
 <link rel="stylesheet" href="css/index.css">
 <link rel="stylesheet" href="css/marca.css">
 <link rel="stylesheet" href="css/Sobre.css">
+<link rel="stylesheet" href="css/nav.css">
     <title>4Vets</title>
 </head>
 <body>
@@ -37,6 +38,43 @@ if($_SESSION['logado'] == !true){
         <li id='menu-login' class='material-icons  icon-tchau menu-item retratil'><a href="Login.php">vpn_key</a></li>
     </ul>
 </nav>
+<div id='sess'>
+<h2 id='titulo-sessao-sobre'>Um pouco sobre a nossa história</h2>
+        <div id='sobre-linha'>
+                <img id='sobre-imagem' src="https://cdn0.iconfinder.com/data/icons/tutor-icon-set/512/Globe_icon-512.png" alt="">
+
+            <div id='sobre-texto'>
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                 ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+                 consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque 
+                 porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+                 adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore 
+                 et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
+                  quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
+                   ut aliquid ex ea commodi consequatur? Quis autem vel eum iure 
+                   reprehenderit qui in ea voluptate velit esse quam nihil molestiae 
+                   consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? <br><br><br>
+                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                   doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+                   veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                    ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque 
+                    porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+                    adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore 
+                    et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
+                     quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
+                      ut aliquid ex ea commodi consequatur? Quis autem vel eum iure 
+                      reprehenderit qui in ea voluptate velit esse quam nihil molestiae 
+                      consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? 
+                </div>
+        </div>
+        </div>
+
+<footer>
+  <p id='copy'>&copy 4Vets</p>
+</footer>
 </body>
 </html>
 <script src='js/menuMobile.js'></script>

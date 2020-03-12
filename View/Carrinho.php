@@ -2,7 +2,7 @@
 <?php
 @session_start();
 if($_SESSION['logado'] == !true){
-    echo("'<script>alert('Realize o login antes de visualizar o carrinho');window.location.href = 'Login.php';</script>'");
+  //  echo("'<script>alert('Realize o login antes de visualizar o carrinho');window.location.href = 'Login.php';</script>'");
 
    // header("location: Login.php");
 }
@@ -17,7 +17,7 @@ if($_SESSION['logado'] == !true){
 
 <link rel="stylesheet" href="css/index.css">
 <link rel="stylesheet" href="css/marca.css">
-<link rel="stylesheet" href="css/Carrinho.css">
+<link rel="stylesheet" href="css/nav.css">
     <title>4Vets</title>
 </head>
 <body>
@@ -35,6 +35,9 @@ if($_SESSION['logado'] == !true){
         <li id='menu-login' class='material-icons  icon-tchau menu-item retratil'><a href="Login.php">vpn_key</a></li>
     </ul>
 </nav>
+<footer>
+  <p id='copy'>&copy 4Vets</p>
+</footer>
 </body>
 </html>
 <script src='js/menuMobile.js'></script>

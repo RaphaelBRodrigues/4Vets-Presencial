@@ -1,3 +1,14 @@
+footer{
+    position: absolute;
+    width: 100%;
+    top:104%;
+}
+#sobre-texto{
+ color:rgba(42,63,128,1);
+}
+#sess{
+    margin-bottom:3em;
+}
 @media screen and (max-width:1088px) {
     .linha-produt{
         display: block;
@@ -9,16 +20,12 @@
         #menu-carrinho{
             left:-13em;
             top:6.2em;
-            background-color: green;
         }
         #menu-login{
             left:2.5em;
-            background-color: green;
 
         }
-     li
-     {
-         background-color: green;
-     }
+     
+     
        
 }

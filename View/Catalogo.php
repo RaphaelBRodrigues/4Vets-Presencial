@@ -19,6 +19,7 @@ if($_SESSION['logado'] == !true){
 
 <link rel="stylesheet" href="css/index.css">
 <link rel="stylesheet" href="css/marca.css">
+<link rel="stylesheet" href="css/nav.css">
     <title>4Vets</title>
 </head>
 <body>
@@ -100,6 +101,9 @@ if($_SESSION['logado'] == !true){
     
 </table>
 </center>
+<footer>
+  <p id='copy'>&copy 4Vets</p>
+</footer>
 </body>
 </html>
 <script src='js/menuMobile.js'></script>

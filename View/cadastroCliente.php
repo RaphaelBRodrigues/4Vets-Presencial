@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<?php
+@session_start();
+if($_SESSION['logado'] == true){
+    echo("'<script>alert('O senhor(a) já está logado');window.location.href = 'Catalogo.php';</script>'");
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+   // header("location: Login.php");
+}
+?>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="theme-color" content="#95b5a6">
+<link rel="shortcut icon" href="https://www.kindpng.com/picc/m/169-1693411_cats-dogs-cats-and-dogs-heart-shaped-svg.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/cadastro.css">
+<link rel="stylesheet" href="css/nav.css">
+    <title>4Vets</title>
+    </head>
 <body>
+
+<nav id='cabb' class='menu'>
+    <ul>
+        <li id='logo'><a href="../index.php"><img id='logo-img' src="https://grupo4vets.com.br/images/logo.png" alt=""></a></li>
+        <li><button onclick='menu()' id='menu-button'  class='material-icons'>menu</button></li>
+
+        <li id='menu-catalogo' class='menu-item word retratil'><a href="Catalogo.php">Catálogo</a></li>
+        <li id='menu-sobre' class='menu-item word retratil'><a href="Sobre.php">Sobre nós</a></li>
+        <li id='menu-parceiro' class='menu-item word retratil'><a href="Parceiros.php">Parceiros</a></li>
+        <li id='menu-contato' class='menu-item word retratil'><a href="Contatos.php">Contatos</a></li>
+
+        <li id='menu-carrinho' class='material-icons icon-tchau menu-item retratil'><a href="Carrinho.php">add_shopping_cart  </a></li>
+        <li id='menu-login' class='material-icons  icon-tchau menu-item retratil'><a href="Login.php">vpn_key</a></li>
+    </ul>
+</nav>
     <fieldset>
         <legend>Cadastro</legend>
         <form method='post' action="../Controller/cadastroClienteController.php">
@@ -87,7 +115,7 @@
 
             <tr>
                 <td>
-                <select name="marca" id="marca">
+               <label for="marca">Marca Associada</label>  <select name="marca" id="marca">
     <option value="1">Marca 1</option>
     <option value="2">Marca 2</option>
     <option value="3">Marca 3</option>
@@ -100,10 +128,13 @@
             
         
         </table>
-        <button type='submit'>Entrar</button>
+        <button class='div-button' type='submit'>Entrar</button>
 
         </form>
         
     </fieldset>
+    <footer>
+  <p id='copy'>&copy 4Vets</p>
+</footer>
 </body>
 </html>

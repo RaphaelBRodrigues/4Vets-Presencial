@@ -1,7 +1,12 @@
 <!DOCTYPE html>
+<?php
+@session_start();
+if($_SESSION['logado'] == true){
+    echo("'<script>alert('O senhor(a) já está logado');window.location.href = 'Catalogo.php';</script>'");
 
-
-
+   // header("location: Login.php");
+}
+?>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -11,12 +16,11 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="css/marca.css">
+<link rel="stylesheet" href="css/login.css">
 <link rel="stylesheet" href="css/nav.css">
     <title>4Vets</title>
 </head>
 <body>
-
 <nav id='cabb' class='menu'>
     <ul>
         <li id='logo'><a href="../index.php"><img id='logo-img' src="https://grupo4vets.com.br/images/logo.png" alt=""></a></li>
@@ -33,16 +37,35 @@
 </nav>
 
 
-        <h2 id='titulo-sessao-parceiros'>Parceiros</h2>
+    <fieldset>
+        <legend>Login</legend>
+        <form method='post' action="../Controller/loginClienteController.php">
         <center>
-        <div id='parceiros-linha'>
-                <img class='logo-parceiros' src="https://grupo4vets.com.br/images/ebricks.jpg"  alt="">
-                <img class='logo-parceiros' src="https://grupo4vets.com.br/images/yandeh.jpg"  alt="">
-                <img class='logo-parceiros' src="https://grupo4vets.com.br/images/iporanga.jpg"  alt="">
-                <img class='logo-parceiros' src="https://grupo4vets.com.br/images/500startups.jpg"  alt="">
-            </div>
+        <table>
+        <tr>
+            <td class='material-icons'><label for="senha">format_bold
+</label></td>
+
+                <td><input id='nome' name='nome' placeholder='Usuário' type="text"></td>
+
+            </tr>
+            <tr>
+            <td class='material-icons'><label for="senha">dialpad</label></td>
+
+            <td><input id='senha' name='senha' placeholder='Senha' type="password"></td>
+
+
+            </tr>
+        
+        </table><br>
+        <button id='button-login' type='submit'>Entrar</button><br><br>
+        <a id='cadastro' href="cadastroCliente.php">Não tenho cadastro!</a>
         </center>
-<footer>
+
+        </form>
+        
+    </fieldset>
+    <footer>
   <p id='copy'>&copy 4Vets</p>
 </footer>
 </body>

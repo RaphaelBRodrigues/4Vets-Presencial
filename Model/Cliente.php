@@ -10,4 +10,8 @@ public function __construct(){
 public function cadastroCliente(){
 echo "ola";
 }
+
+public function login($nome,$senha){
+  echo "oi";
+}
 }
