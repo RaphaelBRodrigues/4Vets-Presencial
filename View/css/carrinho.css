@@ -6,6 +6,10 @@ fieldset{
     border:3px solid rgba(42,63,128,1);
 
 }
+
+th{
+    text-align: left;
+}
 legend{
     font-size: 4em;
     color:rgba(42,63,128,1);
@@ -43,10 +47,30 @@ a{
     color:blue;
     text-decoration: underline;
 }
+span{
+    margin-left: 35%;
+}
+button{
+    transition-duration: 1s;
+    border:0px solid rgba(0,0,0,0);
+    background-image:none;
+    border-radius: 3px;
+}
+#finalizar{
+    background-image: linear-gradient(to right,"red","white") !important;
+ 
+}
+.div-button{
+    width: 80%;
+    height: 3em;
+}
+#continuar{
+    background-image: linear-gradient(to right,"red","white");
+}
 footer{
     position: absolute;
     width: 100%;
-    top:104%;
+    top:100%;
 }
 @media screen and (max-width:1088px) {
     .div-button{

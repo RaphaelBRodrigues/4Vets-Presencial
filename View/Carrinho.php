@@ -16,8 +16,9 @@ if($_SESSION['logado'] == !true){
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="css/marca.css">
 <link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/carrinho.css">
+
     <title>4Vets</title>
 </head>
 <body>
@@ -35,6 +36,38 @@ if($_SESSION['logado'] == !true){
         <li id='menu-login' class='material-icons  icon-tchau menu-item retratil'><a href="Login.php">vpn_key</a></li>
     </ul>
 </nav>
+<fieldset>
+  <legend>Carrinho</legend>
+<table >
+  <tr>
+<th>Produto</th>
+<th>Quantidade</th>
+<th id='preco'>Preço</th>
+</tr>
+<tr>
+  <td>Teste</td>
+  <td>652</td>
+  <td>R$6456131,95</td>
+</tr><tr>
+  <td>Teste</td>
+  <td>652</td>
+  <td>R$6456131,95</td>
+</tr>
+<tr>
+  <form action="">
+<td><button id='finalizar' class='div-button'>Finalizar Compra</button></td>
+</form>
+<form action="Catalogo.php">
+<td><button id='continuar' class='div-button' id='abandonar'>Continuar Compra</button></td>
+</form>
+<form action="">
+<td><button id='abandonar'  class='div-button' id='abandonar'>Abandonar Compra</button></td>
+</form>
+
+</tr>
+</table>
+  
+</fieldset>
 <footer>
   <p id='copy'>&copy 4Vets</p>
 </footer>

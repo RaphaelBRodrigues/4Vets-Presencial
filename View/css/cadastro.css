@@ -43,6 +43,11 @@ a{
     color:blue;
     text-decoration: underline;
 }
+footer{
+    position: absolute;
+    width: 100%;
+    top:104%;
+}
 @media screen and (max-width:1088px) {
     .div-button{
     width: 80%;

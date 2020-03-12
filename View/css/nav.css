@@ -6,15 +6,16 @@
         margin-right: auto;
 
         }
+    
+        
         #menu-carrinho{
-            left:-15em;
-            top:6.2em;
+            top: 5em;
+            left: 0.4em;
         }
         #menu-login{
-            top:6.2em;
-            left:-14.5em;
-
+            left: 0.5em;
+        
+            top: 5em;
         }
-     
        
 }

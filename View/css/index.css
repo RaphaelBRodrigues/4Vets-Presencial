@@ -449,22 +449,19 @@ display: block;
     left: -19.9em;
 }
 #menu-contato{
-    top:9em;
+    top:6.8em;
 
-    left: -28.8em;
+    left: 5.3em;
 }  
 
 #menu-carrinho{
     top: 5em;
-    left: -1.5em;
     position: relative;
-    background-color: yellow;
-
+    left: 0.4em;
 }
 
 #menu-login{
-    left:34em;
-    background-color: yellow;
+    left: 0.5em;
 
     top: 5em;
 }
@@ -474,7 +471,7 @@ display: block;
 }
 .menuAberto{
     z-index: 999;
-    height: 22em;
+    height: 18.5em;
         background-color: #2A3F80;
 }
 .menuAbertoLinks{
