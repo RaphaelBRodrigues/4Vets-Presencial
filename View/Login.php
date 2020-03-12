@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 @session_start();
-if($_SESSION['logado'] == true){
+if(@$_SESSION['logado'] == true){
     echo("'<script>alert('O senhor(a) já está logado');window.location.href = 'Catalogo.php';</script>'");
 
    // header("location: Login.php");

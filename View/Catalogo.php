@@ -2,7 +2,7 @@
 
 <?php
 @session_start();
-if($_SESSION['logado'] == !true){
+if(@$_SESSION['logado'] == !true){
     echo("'<script>alert('Realize o login antes de visualizar o catálogo');window.location.href = 'Login.php';</script>'");
 
    // header("location: Login.php");

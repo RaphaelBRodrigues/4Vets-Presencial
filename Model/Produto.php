@@ -2,9 +2,11 @@
 
 class Produto{
     private $pdo;
-
+public function __construct(){
+    $pdo = new PDO("mysql:host=127.0.0.1;dbname=Catchuro","root","root");
+}
     public function consultaProdutos(){
-        foreach($this-pdo->query("SELECT * FROM Produtos where Status = 1") as $produto){
+        foreach($this->pdo->query("SELECT * FROM Produtos where Status = 1") as $produto){
             echo "
             
                

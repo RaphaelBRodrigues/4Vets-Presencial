@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php
 @session_start();
-if($_SESSION['logado'] == !true){
-  //  echo("'<script>alert('Realize o login antes de visualizar o carrinho');window.location.href = 'Login.php';</script>'");
+if(@$_SESSION['logado'] == !true){
+    echo("'<script>alert('Realize o login antes de visualizar o carrinho');window.location.href = 'Login.php';</script>'");
 
    // header("location: Login.php");
 }

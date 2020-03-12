@@ -5,21 +5,25 @@ class Representante{
 private $pdo;
 
 public function __construct(){
-  $pdo = new PDO("mysql:host=127.0.0.1;dbname=Catchuro","root","root");
+  $this->pdo = new PDO("mysql:host=localhost;dbname=Catchuro","root","");
 }
 public function cadastroRepresentante($nome,$email,$tel,$marca){
   echo "oi";
-  /*
-  $prepare = $this->pdo->prepare("INSERT INTO Usuario(Codigo, Nome, Email, Telefone, Marca) values(null,?,?,?,?)");
+  
 
-//$prepare = $this->pdo->prepare("INSERT INTO Representante(Codigo,Nome,Email,Telefone,Marca) VALUES(null,'sda','sda',2322,'sda')");
+$prepare = $this->pdo->prepare("INSERT INTO Representante(RepresentanteID,Nome,Senha,Email,Telefone) VALUES(null,'sda','sda','2322',2424)");
 
 $prepare->bindParam(1,$nome);
 $prepare->bindParam(2,$email);
 $prepare->bindParam(3,$tel);
 $prepare->bindParam(4,$marca);
 
-$prepare->execute();*/
+$prepare->execute();
+return $prepare->rowCount();
+}
+
+public function login($nome,$senha){
+  echo "Copiar do model cliente";
 }
 
 }

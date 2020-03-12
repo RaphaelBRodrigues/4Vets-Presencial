@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 @session_start();
-if($_SESSION['logado'] == true){
+if(@$_SESSION['logado'] == true){
     echo("'<script>alert('O senhor(a) já está logado');window.location.href = 'Catalogo.php';</script>'");
 
    // header("location: Login.php");
@@ -38,7 +38,7 @@ if($_SESSION['logado'] == true){
 </nav>
     <fieldset>
         <legend>Cadastro</legend>
-        <form method='post' action="../Controller/cadastroClienteController.php">
+        <form method='get' action="../Controller/cadastroClienteController.php">
         <table>
         <tr>
            
@@ -115,12 +115,12 @@ if($_SESSION['logado'] == true){
 
             <tr>
                 <td>
-               <label for="marca">Marca Associada</label>  <select name="marca" id="marca">
-    <option value="1">Marca 1</option>
-    <option value="2">Marca 2</option>
-    <option value="3">Marca 3</option>
-    <option value="4">Marca 4</option>
-    <option value="5">Marca 5</option>
+               <label for="marca">Representante de marcas</label>  <select name="marca" id="marca">
+    <option value="1">Representante Marca 1</option>
+    <option value="2">Representante Marca 2</option>
+    <option value="3">Representante Marca 3</option>
+    <option value="4">Representante Marca 4</option>
+    <option value="5">Representante Marca 5</option>
     </select>
                 </td>
             </tr>
