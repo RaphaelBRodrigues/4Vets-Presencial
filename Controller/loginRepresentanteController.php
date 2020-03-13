@@ -1,5 +1,5 @@
 <?php
-require '../Model/C.php';
+require '../Model/Representante.php';
 
 
 

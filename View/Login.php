@@ -2,7 +2,7 @@
 <?php
 @session_start();
 if(@$_SESSION['logado'] == true){
-    echo("'<script>alert('O senhor(a) já está logado');window.location.href = 'Catalogo.php';</script>'");
+    echo("'<script>alert('".$_SESSION['nome']."! Você já está logado como {$_SESSION['categoria']}');window.location.href = 'Catalogo.php';</script>'");
 
    // header("location: Login.php");
 }

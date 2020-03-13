@@ -42,42 +42,25 @@ if(@$_SESSION['logado'] == !true){
 <table>
 
     <tr>
-        
+
         <td class='linha-produt'>
             <h2 class='titulo-produto'>Produto ta</h2>
             <h3 class='marca-produto'> Marca 1</h3>
             <img class='imagem-produto' src="https://www.pngkit.com/png/full/311-3119714_download-png-desenho-de-cabea-de-cachorro.png" alt="">
             <h3 class='valor-produto'> R$32,00</h3>
             <center>
-                <form action="../Controller/enviarProdutoCarrinho.php">
-                <input type="text" disabled value='42 produtos no estoque'><br><br>
-          <input name='quantidade' class='quantidade-produto' type="number" placeholder='Quantidade'><br><br>
-          <button type='submit' value='1' name='id' class='adicionarCarrinho'>Adicionar ao carrinho</button>
+                  <form method='POST' action="../Controller/enviarProdutoCarrinho.php">
+                <input name='estoque' type="text" disabled value='42 produtos no estoque'><br><br>
+          <input value=4 name='quantidade' class='quantidade-produto' type="number" placeholder='Quantidade'><br><br>
+          <button  type='submit' value='1' name='id' class='adicionarCarrinho'>Adicionar ao carrinho</button>
           </form>
           </center>
         </td>
-     
-        
-        
 
 
-        
-        <td class='linha-produt'>
-            <h2 class='titulo-produto'>Produto ta</h2>
-            <h3 class='marca-produto'> Marca 1</h3>
-            <img class='imagem-produto' src="https://www.pngkit.com/png/full/311-3119714_download-png-desenho-de-cabea-de-cachorro.png" alt="">
-            <h3 class='valor-produto'> R$32,00</h3>
-            <center>
-            <form action="../Controller/enviarProdutoCarrinho.php">
-                <input type="text" disabled value='42 produtos no estoque'><br><br>
-          <input  class='quantidade-produto' type="number" placeholder='Quantidade'><br><br>
-          <button class='adicionarCarrinho'>Adicionar ao carrinho</button>
-</form>
-</center>
 
-        </td>
-       
-       
+
+
 
         <td class='linha-produt'>
             <h2 class='titulo-produto'>Produto ta</h2>
@@ -85,20 +68,37 @@ if(@$_SESSION['logado'] == !true){
             <img class='imagem-produto' src="https://www.pngkit.com/png/full/311-3119714_download-png-desenho-de-cabea-de-cachorro.png" alt="">
             <h3 class='valor-produto'> R$32,00</h3>
             <center>
-            <form action="../Controller/enviarProdutoCarrinho.php">
-                <input type="text" disabled value='42 produtos no estoque'><br><br>
-          <input  class='quantidade-produto' type="number" placeholder='Quantidade'><br><br>
-          <button class='adicionarCarrinho'>Adicionar ao carrinho</button>
+              <form method='post' action="../Controller/enviarProdutoCarrinho.php">
+                <input name='estoque' type="text" disabled value='42 produtos no estoque'><br><br>
+           <input  class='quantidade-produto' name='quantidade' type="number" placeholder='Quantidade'><br><br>
+          <button name='id' value='2' class='adicionarCarrinho'>Adicionar ao carrinho</button>
 </form>
 </center>
 
         </td>
-       
-      
-        
+
+
+
+        <td class='linha-produt'>
+            <h2 class='titulo-produto'>Produto ta</h2>
+            <h3 class='marca-produto'> Marca 1</h3>
+            <img class='imagem-produto' src="https://www.pngkit.com/png/full/311-3119714_download-png-desenho-de-cabea-de-cachorro.png" alt="">
+            <h3 class='valor-produto'> R$32,00</h3>
+            <center>
+              <form method='post'  action="../Controller/enviarProdutoCarrinho.php">
+                <input name='estoque' type="text" disabled value='42 produtos no estoque'><br><br>
+           <input  class='quantidade-produto' name='quantidade' type="number" placeholder='Quantidade'><br><br>
+          <button name='id' value='3' class='adicionarCarrinho'>Adicionar ao carrinho</button>
+</form>
+</center>
+
+        </td>
+
+
+
     </tr>
 
-    
+
 </table>
 </center>
 <footer>

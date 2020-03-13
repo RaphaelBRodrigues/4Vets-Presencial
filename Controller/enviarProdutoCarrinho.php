@@ -2,9 +2,8 @@
 require '../Model/Carrinho.php';
 
 
-
 $rep = new Carrinho();
-if(empty($_POST['quantidade']) || ($_POST['quantidade'] == 0))){
+if(empty($_POST['quantidade']) || ($_POST['quantidade'] == 0)){
 //header("location: ../View/Catalogo.php");
 echo "
 

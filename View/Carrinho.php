@@ -44,15 +44,10 @@ if(@$_SESSION['logado'] == !true){
 <th>Quantidade</th>
 <th id='preco'>Preço</th>
 </tr>
-<tr>
-  <td>Teste</td>
-  <td>652</td>
-  <td>R$6456131,95</td>
-</tr><tr>
-  <td>Teste</td>
-  <td>652</td>
-  <td>R$6456131,95</td>
-</tr>
+<?php
+include_once('../Controller/resgatarCarrinhoController.php');
+?>
+
 <tr>
   <form action="">
 <td><button id='finalizar' class='div-button'>Finalizar Compra</button></td>
@@ -66,7 +61,7 @@ if(@$_SESSION['logado'] == !true){
 
 </tr>
 </table>
-  
+
 </fieldset>
 <footer>
   <p id='copy'>&copy 4Vets</p>

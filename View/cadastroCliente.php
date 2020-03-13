@@ -41,97 +41,100 @@ if(@$_SESSION['logado'] == true){
         <form method='get' action="../Controller/cadastroClienteController.php">
         <table>
         <tr>
-           
+
         <td class=''><label for="nome">Nome</label></td>
-                <td><input id='nome' name='nome' type="text"></td>
+                <td><input required id='nome' name='nome' type="text"></td>
 
             </tr>
             <tr>
             <td class=''><label for="senha">Senha</label></td>
 
-            <td><input id='senha' name='senha' type="password"></td>
+            <td><input required id='senha' name='senha' type="password"></td>
 
 
             </tr>
             <tr>
             <td class=''><label for="email">Email</label></td>
 
-            <td><input id='email' name='email' type="email"></td>
+            <td><input required id='email' name='email' type="email"></td>
 
 
             </tr>
             <tr>
             <td class=''><label for="tel">Telefone</label></td>
 
-            <td><input id='tel' name='tel' type="number"></td>
+            <td><input required id='tel' name='tel' type="number"></td>
 
             <tr>
             <tr>
             <td class=''><label for="nFantasia">Nome Fantasia</label></td>
 
-            <td><input id='nFantasia' name='nFantasia' type="text"></td>
+            <td><input required id='nFantasia' name='nFantasia' type="text"></td>
 
             <tr>
             <tr>
             <td class=''><label for="ramo">Ramo</label></td>
 
-            <td><input id='ramo' name='ramo' type="number"></td>
+            <td>
+              <input  id='ramo' name='ramo' type="checkbox" value='1'><label for="">PetShop</label>
+              <input  id='ramo' name='ramo' type="checkbox" value='2'>  <label for="">Veterinário</label>
+              <input  id='ramo' name='ramo' type="checkbox" value='3'>  <label for="">Banho e tosa</label>
+
+            </td>
 
             <tr>
             <tr>
             <td class=''><label for="cpf">CPF</label></td>
 
-            <td><input id='cpf' name='cpf' type="number"></td>
+            <td><input required id='cpf' name='cpf' type="number"></td>
 
             <tr>
             <tr>
             <td class=''><label for="cnpj">CNPJ</label></td>
 
-            <td><input id='cnpj' name='cnpj' type="number"></td>
+            <td><input required id='cnpj' name='cnpj' type="number"></td>
 
             <tr>
             <tr>
             <td class=''><label for="cep">CEP</label></td>
 
-            <td><input id='cep' name='cep' type="number"></td>
+            <td><input required id='cep' name='cep' type="number"></td>
 
             <tr>
             <tr>
             <td class=''><label for="numero">Número</label></td>
 
-            <td><input id='numero' name='numero' type="number"></td>
+            <td><input required id='numero' name='numero' type="number"></td>
 
             <tr>
             <tr>
             <td class=''><label for="complemento">Complemento</label></td>
 
-            <td><input id='complemento' name='complemento' type="text"></td>
+            <td><input required id='complemento' name='complemento' type="text"></td>
 
             <tr>
             <tr>
             <td class=''><label for="tel">Status</label></td>
 
-            <td><input id='tel' name='tel' disabled type="number"></td>
+            <td><input required id='tel' name='tel' disabled type="number"></td>
 
             <tr>
                 <td>
-               <label for="marca">Representante de marcas</label>  <select name="marca" id="marca">
-    <option value="1">Representante Marca 1</option>
-    <option value="2">Representante Marca 2</option>
-    <option value="3">Representante Marca 3</option>
-    <option value="4">Representante Marca 4</option>
-    <option value="5">Representante Marca 5</option>
-    </select>
+               <label for="representante">Representante de marcas</label>
+
+    <?php
+    include("../Controller/resgatarRepresentantes.php");
+    ?>
                 </td>
             </tr>
-  
-            
-        
+
+
+
         </table>
         <button class='div-button' type='submit'>Entrar</button>
 
         </form>
-        
+
     </fieldset>
     <footer>
   <p id='copy'>&copy 4Vets</p>

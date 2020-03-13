@@ -70,22 +70,21 @@ if(@$_SESSION['logado'] == true){
             <tr>
                 <td><br>
                 <select name="marca" id="marca">
-    <option value="1">Marca 1</option>
-    <option value="2">Marca 2</option>
-    <option value="3">Marca 3</option>
-    <option value="4">Marca 4</option>
-    <option value="5">Marca 5</option>
-    </select>
+                  <option value="1">Marca 1</option>
+                     <option value="2">Marca 2</option>
+                     <option value="3">Marca 3</option>
+                     <option value="4">Marca 4</option>
+                     <option value="5">Marca 5</option>    </select>
                 </td>
             </tr>
-  
-            
-        
+
+
+
         </table>
         <button class='div-button' type='submit'>Entrar</button>
 
         </form>
-        
+
     </fieldset>
     <footer>
   <p id='copy'>&copy 4Vets</p>
